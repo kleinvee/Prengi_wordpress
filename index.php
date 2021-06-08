@@ -94,23 +94,32 @@
     <section class="withPrengi" id="withPrengi">
         <div class="container">
             <div class="withPrengi__wrapper">
-                <div class="withPrengi__box">
-                    <div class="withPrengi__icon"><img src="<?php echo get_template_directory_uri( )?>/assets/icons/withPrengi/no1.png" alt="withPrengi__icon"></div>
-                    <div class="withPrengi__text">Нет оперативности <br> в принятии решений?</div>
-                    <img src="<?php echo get_template_directory_uri( )?>/assets/icons/withPrengi/no.png" alt="withPrengi__angle" class="withPrengi__angle">
-                </div>
-    
-                <div class="withPrengi__box">
-                    <div class="withPrengi__icon"><img src="<?php echo get_template_directory_uri( )?>/assets/icons/withPrengi/no2.png" alt="withPrengi__icon"></div>
-                    <div class="withPrengi__text">Нет учета и контроля <br> обслуживания?</div>
-                    <img src="<?php echo get_template_directory_uri( )?>/assets/icons/withPrengi/no.png" alt="withPrengi__angle" class="withPrengi__angle">
-                </div>
-    
-                <div class="withPrengi__box">
-                    <div class="withPrengi__icon"><img src="<?php echo get_template_directory_uri( )?>/assets/icons/withPrengi/no3.png" alt="withPrengi__icon"></div>
-                    <div class="withPrengi__text">Сложно строить прогнозы и <br> анализировать данные?</div>
-                    <img src="<?php echo get_template_directory_uri( )?>/assets/icons/withPrengi/no.png" alt="withPrengi__angle" class="withPrengi__angle">
-                </div>
+                <?php		
+                    global $post;
+
+                    $query = new WP_Query( [
+                        'posts_per_page' => 3,
+                        'category_name'  => 'prengi_question',
+                        'orderby'        => 'comment_count',
+                    ] );
+
+                    if ( $query->have_posts() ) {
+                        while ( $query->have_posts() ) {
+                            $query->the_post();
+                            ?>
+                            <div class="withPrengi__box">
+                                <div class="withPrengi__icon"><img src="<?php the_field('question_icon'); ?>" alt="withPrengi__icon"></div>
+                                <div class="withPrengi__text"><?php the_title( ); ?></div>
+                                <img src="<?php echo get_template_directory_uri( )?>/assets/icons/withPrengi/no.png" alt="withPrengi__angle" class="withPrengi__angle">
+                            </div>
+                            <?php 
+                        }
+                    } else {
+                        
+                }
+
+                wp_reset_postdata();
+                ?>
             </div>
 
             <div class="arrow">
@@ -127,23 +136,32 @@
             <div class="withPrengi__title">С PRENGI</div>
 
             <div class="withPrengi__wrapper withPrengi__wrapper-bottom">
-                <div class="withPrengi__box">
-                    <div class="withPrengi__icon"><img src="<?php echo get_template_directory_uri( )?>/assets/icons/withPrengi/yes4.png" alt="withPrengi__icon"></div>
-                    <div class="withPrengi__text withPrengi__text-bold">Все затраты спланированы <br> и расписаны</div>
-                    <img src="<?php echo get_template_directory_uri( )?>/assets/icons/withPrengi/yes.png" alt="withPrengi__angle" class="withPrengi__angle">
-                </div>
-    
-                <div class="withPrengi__box">
-                    <div class="withPrengi__icon"><img src="<?php echo get_template_directory_uri( )?>/assets/icons/withPrengi/yes5.png" alt="withPrengi__icon"></div>
-                    <div class="withPrengi__text withPrengi__text-bold">Корректная аналитика данных <br> online</div>
-                    <img src="<?php echo get_template_directory_uri( )?>/assets/icons/withPrengi/yes.png" alt="withPrengi__angle" class="withPrengi__angle">
-                </div>
-    
-                <div class="withPrengi__box">
-                    <div class="withPrengi__icon"><img src="<?php echo get_template_directory_uri( )?>/assets/icons/withPrengi/yes6.png" alt="withPrengi__icon"></div>
-                    <div class="withPrengi__text withPrengi__text-bold">Простая интеграция с любым <br> Вашим ПО</div>
-                    <img src="<?php echo get_template_directory_uri( )?>/assets/icons/withPrengi/yes.png" alt="withPrengi__angle" class="withPrengi__angle">
-                </div>
+                <?php		
+                    global $post;
+
+                    $query = new WP_Query( [
+                        'posts_per_page' => 3,
+                        'category_name'  => 'prengi_response',
+                        'orderby'        => 'comment_count',
+                    ] );
+
+                    if ( $query->have_posts() ) {
+                        while ( $query->have_posts() ) {
+                            $query->the_post();
+                            ?>
+                            <div class="withPrengi__box">
+                                <div class="withPrengi__icon"><img src="<?php the_field('response_icon'); ?>" alt="withPrengi__icon"></div>
+                                <div class="withPrengi__text withPrengi__text-bold"><?php the_title( ); ?></div>
+                                <img src="<?php echo get_template_directory_uri( )?>/assets/icons/withPrengi/yes.png" alt="withPrengi__angle" class="withPrengi__angle">
+                            </div>
+                            <?php 
+                        }
+                    } else {
+                        
+                }
+
+                wp_reset_postdata();
+                ?>
             </div>
         </div>
     </section>
