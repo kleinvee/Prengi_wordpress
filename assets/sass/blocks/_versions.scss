@@ -1,0 +1,53 @@
+.versions {
+    position: relative;
+    &__title {
+        position: absolute;
+        transform: translateX(-50%);
+        left: 50%;
+        top: 14%;
+    }
+    &__wrapper {
+        display: flex;
+    }
+    &__text {
+        position: absolute;
+        color: #ffffff;
+        top: 46.5%;
+        width: 483px;
+        z-index: 1;
+        @include square;
+        &-left {
+            right: calc(50% + 80px);
+            text-align: right;
+            &::before {
+                right: -35px;
+            }
+        }
+        &-right {
+            left: calc(50% + 80px);
+            &::before {
+                left: -35px;
+            }
+        }
+    }
+    &__subtitle {
+        position: relative;
+        font-size: 30px;
+        line-height: 22px;
+        font-weight: 900;
+        text-transform: uppercase;
+    }
+    &__descr {
+        position: relative;
+        padding-top: 20px;
+        font-size: 18px;
+        line-height: 26px;
+        font-weight: 300;
+        color: #ffffff;
+
+    }
+    &__bg {
+        width: 100%;
+        z-index: -1;
+    }
+}

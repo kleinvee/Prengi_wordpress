@@ -1,0 +1,38 @@
+footer {
+    padding: 50px 0 40px 0;
+    background-color: #0082a1;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 300;
+    .footer {
+        display: flex;
+        justify-content: space-between;
+        &__title {
+            font-size: 16px;
+            line-height: 19px;
+            font-weight: 700;
+            padding-bottom: 4px;
+        }
+    }
+    .company {
+        max-width: 377px;
+    }
+    li {
+        list-style: none;
+        img {
+            padding: 18px 0;
+        }
+    }
+    .divider {
+        width: 100%;
+        height: 1px;
+        background-color: #4da7bd;
+        margin: 40px 0;
+    }
+    .copyright {
+        font-size: 13px;
+        line-height: 17px;
+        font-weight: 300;
+        text-align: center;
+    }
+}

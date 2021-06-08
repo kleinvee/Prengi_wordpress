@@ -1,0 +1,73 @@
+.withPrengi {
+    padding: 80px 0;
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        &-bottom {
+            margin-top: 40px;
+        }
+    }
+    &__box {
+        position: relative;
+        width: 360px;
+        min-height: 255px;
+        border: 1px solid #ececec;
+        padding-top: 30px;  
+    }
+    &__icon {
+        height: 115px;
+        img {
+            display: block;
+            margin: 0 auto;
+        }
+    }
+    &__text {
+        padding: 30px 0;
+        font-size: 18px;
+        line-height: 26px;
+        font-weight: 300;
+        color: #393939;
+        z-index: 1;
+        text-align: center;
+        &-bold {
+            font-weight: 700;
+        }
+    }
+    &__angle {
+        position: absolute;
+        right: -1px;
+        bottom: -1px;
+        z-index: -1;
+    }
+    &__title {
+        font-size: 48.1px;
+        line-height: 30px;
+        font-weight: 700;
+        color: #393939;
+        text-align: center;
+        margin-top: 70px;
+    }
+    .arrow {
+        position: relative;
+        &__line {
+            position: absolute;
+            width: 100px;
+            height: 2px;
+            background-color: #9b9b9bbe;
+        }
+        &__leftLine {
+            transform: skew(25deg, -25deg);
+            left: 50%;
+        }
+        &__rightLine {
+            transform: skew(-25deg, 25deg);
+            right: 50%;
+        }
+        &__top {
+            margin-top: 75px;
+        }
+        &__bottom {
+            padding-top: 20px;
+        }
+    }
+}

@@ -1,0 +1,12 @@
+@mixin square {
+    &:before {
+        position: absolute;
+        content: '';
+        width: 167px;
+        height: 167px;
+        opacity: 0.3;
+        background-color: #00c2f0;
+        z-index: 0;
+        top: -38px;
+    }
+}

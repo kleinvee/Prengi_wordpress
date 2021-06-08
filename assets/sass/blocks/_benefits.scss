@@ -1,0 +1,32 @@
+.benefits {
+    &__title {
+        color: #393939;
+        margin-top: 81px;
+    }
+    &__wrapper {
+        margin: 44px 0 80px 0;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    &__img {
+        width: 570px;
+        height: 355px;
+    }
+    &__block {
+        position: relative;
+    }
+    &__text {
+        position: absolute;
+        z-index: 1;
+        margin: auto;
+        transform: translate(-50%, -50%);
+        left: 50%;
+        top: 50%;
+        font-size: 23px;
+        line-height: 26px;
+        font-weight: 400;
+        color: #ffffff;
+        text-align: center;
+        width: 338px;
+    }
+}

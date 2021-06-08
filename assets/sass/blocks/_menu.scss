@@ -1,0 +1,54 @@
+.drop-box {
+    display: none;
+}
+.menu {
+    display: inline-block;
+    height: 40px;
+    font-size: 30px;
+    line-height: 15px;
+    width: 120px; 
+    z-index: 100; 
+    ul {
+        display: none;
+        z-index: 10;
+        margin-top: 0; 
+        background-color: rgba(0, 0, 0, 0.8);
+        li {
+            display: block; 
+        }
+    }
+    #ul {
+        display: none;
+    }
+    .drop-box {
+        margin-top: 27px; 
+    }
+    .drop-text:hover {
+        color: #ffffff;
+        text-decoration: none;
+    }
+    .drop-text {
+        color: #ffffff; 
+    }
+    .fa-chevron-up {
+        margin-left: 100px;
+        position: relative;
+        top: -23px; 
+    }
+    .marked {
+        font-size: 23px;
+        line-height: 46px; }
+    
+    .rotate {
+        moz-transition: all 0.3s linear;
+        webkit-transition: all 0.3s linear;
+        transition: all 0.3s linear;
+    }
+    .rotate.down {
+        moz-transform: rotate(180deg);
+        webkit-transform: rotate(180deg);
+        transform: rotate(180deg); 
+    }
+}
+
+

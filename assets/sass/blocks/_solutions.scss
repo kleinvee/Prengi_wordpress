@@ -1,0 +1,32 @@
+.solutions {
+    background: url(../img/solutions_bg.jpg) center (center/cover) no-repeat;
+    padding: 60px 0;
+    &__title {
+        max-width: 625px;
+    }
+    &__nav {
+        padding: 8px;
+        border: 1px solid #ffffff;
+        width: 836px;
+        margin: 25px auto 36px auto;
+    }
+    &__link {
+        display: inline-block;
+        list-style-type: none;
+        font-size: 14px;
+        line-height: 49px;
+        font-weight: 400;
+        padding: 0 25px;
+        a {
+            color: #ffffff;
+            &:hover {
+                font-weight: 700;
+                color: #00c2f0;
+                text-decoration: none;
+            }
+        }
+        &:nth-child(-n+5) {
+            border-right: rgba(255, 255, 255, 0.5) 1px solid;
+        }
+    }
+}

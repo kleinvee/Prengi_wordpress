@@ -1,0 +1,41 @@
+.contact {
+    &__icon {
+        position: relative;
+        margin: 80px auto 74px auto;
+        width: 302px;
+        height: 302px;
+        border: 1px solid #00c2f0;
+        &:before {
+            content: '';
+            position: absolute;
+            top: -1px;
+            right: 40px;
+            border: 1px solid white;
+            width: calc(100% - 80px);
+            height: calc(100% + 2px);
+        }
+        &:after {
+            content: '';
+            position: absolute;
+            top: 40px;
+            right: -1px;
+            border: 1px solid white;
+            height: calc(100% - 80px);
+            width: calc(100% + 2px);
+        }
+        img {
+            position: absolute;
+            margin: auto;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+        }
+    }
+    &__title {
+        color: #393939;
+    }
+    &__btn {
+        margin: 30px auto 80px auto;
+    }
+}

@@ -1,0 +1,442 @@
+@media (max-width: 1200px) {
+    .sidepanell {
+        justify-content: space-around;
+        .country {
+            margin: 10px 3px;
+            flex-direction: column;
+            flex: 1 0 12.5%;
+            justify-content: start;
+            align-items: center;
+            &__img {
+                margin-bottom: 5px;
+            }
+        }
+    }
+    .promo {
+        .header {
+            justify-content: space-around;
+        }
+        .carousel {
+            .slide {
+                padding-left: 10px;
+                &__title {
+                    font-size: 32px;
+                    line-height: 42px;;
+                }
+                &__descr {
+                    font-size: 21px;
+                    line-height: 30px;
+                }
+                img {
+                    width: 396px;
+                    padding-top: 95px;
+                    padding-right: 10px;
+                }
+            }
+        }
+    }
+
+    .withPrengi {
+        &__box {
+        width: 325px;
+        }
+        &__wrapper {
+            justify-content: space-around;
+        }
+    }
+
+    .benefits {
+        &__wrapper {
+        justify-content: center;
+        }
+        &__img {
+                width: 488px;
+                height: 304px;
+        }
+    }
+    .versions {
+        &__title {
+            top: 5%;
+        }
+        &__text {
+            width: 400px;
+        }
+        &__descr {
+            &-left {
+                right: 0px;
+            }
+        }
+    }
+    footer {
+        .footer {
+            justify-content: space-around;
+        }
+    }
+}
+
+@media (max-width: 991px) {
+    .sidepanell {
+        .country {
+            &__img {
+            display: none;
+            }
+            &__phone, &__email, &__adress {
+                font-size: 11px;
+                line-height: 14px;
+            }
+        }
+    }
+    .promo {
+        height: 640px;
+        .carousel {
+            .slide {
+                img {
+                width: 333px;
+                padding-top: 111px;
+                }
+                &__text {
+                    padding-top: 65px;
+                }
+            }
+        }
+        .owl-carousel.owl-drag .owl-item {
+            height: 534px;
+        }
+        .owl-theme .owl-nav {
+            margin-top: -75px;
+        }
+    }
+    .modal {
+        &__img {
+        position: absolute;
+        top: 103px;
+        right: -34px;
+        width: 318px;
+        }
+    }
+    .withPrengi {
+        &__box {
+        width: 250px;
+        }
+    }
+    .solutions {
+        &__nav {
+        width: 750px;
+        }
+        &__link {
+            padding: 0 18px;
+        }
+        .owl-carousel2 .owl-item img {
+            height: 404px;
+            width: inherit;
+        }
+        .owl-theme2 .owl-nav {
+            top: -259px;
+        }
+    }
+    .benefits {
+        &__img {
+        width: 700px;
+        height: 389px;
+        }
+        &__text {
+            width: 472px;
+        }
+    }
+    .versions {
+        &__wrapper {
+        flex-direction: column;
+        }
+        &__title {
+            position: inherit;
+            color: #393939;
+            padding-bottom: 50px;
+        }
+        &__text {
+            width: 540px;
+            top: 73.5%;
+            &-left {
+                right: 100px;
+                top: 28.5%;
+            }
+            &-right {
+                left: 100px;
+            }
+        }
+        &__subtitle {
+            font-size: 33px;
+        }
+        &__descr {
+            font-size: 26px;
+            line-height: 26px;
+        }
+    }
+    footer {
+        .company {
+            max-width: 236px;
+        }
+        li img {
+            padding: 0;
+        }
+    } 
+}
+
+@media (max-width: 767px) {
+    .promo {
+        height: 584px;
+        .header {
+            padding-top: 25px;
+            &__list {
+            width: 410px;
+            }
+        }
+        .carousel {
+            .slide {
+                img {
+                    width: 301px;
+                }
+                &__text {
+                    padding-top: 50px;
+                }
+                &__descr {
+                    font-size: 17px;
+                    line-height: 26px;
+                }
+            }
+        }
+        .owl-carousel.owl-drag .owl-item {
+            height: 492px;
+        }
+    }
+    .modal {
+        width: 450px;
+        padding: 45px;
+        &__img {
+            display: none;
+        }
+        &__subtitle {
+            text-align: center;
+        }
+    }
+    .feed-form {
+        width: 356px;
+    }
+    .btn_submit {
+        width: 100%;
+    }
+    .withPrengi {
+        &__icon {
+            height: 76px;
+            img {
+                width: 80px;
+            }
+        }
+        &__text {
+            padding: 17px 0;
+            font-size: 13px;
+            line-height: 24px;
+        }
+        &__box {
+            width: 175px;
+            min-height: 200px;
+        }
+    }
+    .solutions {
+        &__nav {
+            width: 570px;
+            margin-top: 5px;
+            border: none;
+        }
+        &__link {
+            padding: 0px 9px;
+            font-size: 12px;
+            &:nth-child(-n+5) {
+                border-right: none;
+            }
+        }
+        .owl-carousel2 .owl-item img {
+            height: 300px;
+        }
+        .owl-theme2 .owl-nav {
+            top: -189px;
+        }
+    }
+    .benefits__img {
+        width: 576px;
+        height: 331px;
+    }
+    .versions {
+        &__text {
+            width: 453px;
+        }
+        &__descr {
+            font-size: 22px;
+        }
+    }
+    footer {
+        padding: 20px 0;
+        .footer {
+            flex-wrap: wrap;
+        }
+        .company {
+            max-width: 100%;
+            padding: 20px;
+        }
+    }
+    .owl-theme .owl-dots {
+        text-align: left;
+        margin-left: 155px;
+    }
+    .owl-theme .owl-nav.disabled + .owl-dots {
+        margin-top: 0;
+    }
+}
+
+@media (max-width: 575px) {
+    aside {
+        display: none;
+    }
+    .promo {
+        .header {
+            padding-top: 15px;
+            img {
+                width: inherit;
+                height: 50px;
+            }
+            &__list {
+                width: 220px;
+                flex-direction: column;
+                padding-top: 0px;
+                position: relative;
+                right: 77px;
+                border-radius: 5px;
+                li {
+                    text-align: center;
+                }
+            }
+        }
+        .carousel {
+            .slide {
+                padding: 0px 15px;
+                img {
+                    display: none;
+                }
+                &__text {
+                    text-align: center;
+                }
+            }
+        }
+    }
+    .owl-carousel.owl-drag .owl-item {
+        height: 380px;
+    }
+    .owl-theme .owl-dots {
+        text-align: center;
+        margin-left: 0;
+    }
+    .owl-theme .owl-nav.disabled + .owl-dots {
+        margin-top: -40px;
+    }
+    .btn {
+        margin: 0 auto;
+    }
+    .modal {
+        width: 100%;
+        &__close {
+            top: 11px;
+            right: 11px;
+            font-size: 50px;
+            line-height: 26px;
+        }
+    }
+    .feed-form {
+        width: 100%;
+    }
+    .withPrengi {
+        &__wrapper {
+            flex-direction: column;
+        }
+        &__box {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            min-height: 136px;
+            padding: 20px;
+        }
+        &__text {
+            margin: 0 auto;
+        }
+    }
+    .title {
+        font-size: 24px;
+        line-height: 30px;
+    }
+    .solutions {
+        padding: 30px 0;
+        &__nav {
+            width: 100%;
+            display: grid;
+            grid-template: 1fr 1fr / 1fr 1fr 1fr;
+        }
+        &__link {
+            padding: 0;
+            line-height: 30px;
+            text-align: center;
+        }
+        .owl-carousel2 .owl-item img {
+            height: inherit;
+            width: 100%;
+            margin: 0 auto;
+        }
+        .owl-theme2 .owl-nav.disabled + .owl-dots {
+            margin-top: 40px;
+        }
+    }
+    .benefits {
+        &__img {
+            width: 100%;
+            height: inherit;
+        }
+        &__text {
+            width: 100%;
+            font-size: 18px;
+        }
+    }
+    .versions {
+        &__subtitle {
+            font-size: 16px;
+        }
+        &__descr {
+            font-size: 14px;
+            padding-top: 5px;
+        }
+        &__text {
+            width: 270px;
+            &-left {
+                right: 50px;
+                top: 33.5%;
+            }
+            &-right {
+                left: 50px;
+            }
+            &:before {
+                width: 115px;
+                height: 115px;
+            }
+        }
+    }
+    .contact__btn {
+        margin: 30px auto;
+    }
+    .footer {
+        .modules {
+            width: 100%;
+            margin: 0 20px;
+            ul {
+                display: grid;
+                grid-template: repeat(7, auto) / repeat(2, auto);
+            }
+        }
+    }
+}
+
